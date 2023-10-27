@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="success">
+          <i class="fa-solid fa-check"></i>
+        </span>
+        <h2>
+          Data Ugurla Gonderildi<span class="Floatmoji Floatmoji-float"
+            >🚀</span
+          >
+        </h2>
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
+    <section>
+      <div class="row">
+        <div class="form-container">
+          <form id="form">
+            <div class="form-title">
+              <h4>Salam</h4>
+            </div>
+            <div class="form-content">
+              <div class="inputs">
+                <div class="search-div"></div>
+                <div class="input-box">
+                  <label for="">Img:</label>
+                  <input
+                    class="input"
+                    id="imgInput"
+                    type="text"
+                    accept="image/*"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="">Film Name</label>
+                  <input id="filmName" type="text" placeholder="Film Name..." />
+                </div>
+                <div class="input-box">
+                  <label for="">Film Imbd</label>
+                  <input
+                    id="filmImbd"
+                    type="number"
+                    min="0"
+                    max="10"
+                    placeholder="Imbd..."
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="cars">Choose a Category:</label>
+                  <select name="categories" id="categories">
+                    <option value="action">Action</option>
+                    <option value="drama">Drama</option>
+                    <option value="comedy">Comedy</option>
+                  </select>
+                </div>
+              </div>
+              <div class="div-img">
+                <img
+                  src="https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Groot"
+                />
+              </div>
+            </div>
+            <div class="btn-submit">
+              <button type="submit" id="btnSubmit">Submit</button>
+              <button type="submit" id="btnEdit">Edit</button>
+            </div>
+          </form>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Img</th>
+                <th>Name</th>
+                <th>Imbd</th>
+                <th>Category</th>
+                <th>Actions</th>
+              </tr>
+              <div class="search-box">
+                <input class="search" type="text" placeholder="search..." />
+              </div>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
